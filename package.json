@@ -1,0 +1,25 @@
+{
+  "name": "instant-js-app-boilerplate",
+  "version": "1.0.0",
+  "description": "A JS app boilerplate to instantly test or prototype something using webpack-dev-server and html-webpack-plugin with minimum configs",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "webpack serve",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=production webpack"
+  },
+  "devDependencies": {
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.2",
+    "html-webpack-plugin": "^5.3.1",
+    "webpack": "^5.37.0",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.3"
+  },
+  "keywords": [],
+  "author": "mo@madmadi.me",
+  "license": "ISC"
+}
