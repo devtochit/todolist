@@ -1,12 +1,31 @@
-const HTMLWebpackPlugin = require('html-webpack-plugin');
-
-const isProd = process.env.NODE_ENV === 'production';
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    mode: isProd ? 'production' : 'development',
+    entry: './src/index.html',
+    mode: 'development',
+    output: {
+        filename: '[name].bundle.js',
+        path: path.resolve(__dirname, 'dist'),
+        clean: true,
+    },
+    devServer: {
+        static: './dist',
+    },
     plugins: [
-        new HTMLWebpackPlugin({
-            template: 'src/index.html',
+        new HtmlWebpackPlugin({
+            template: './src/index.html',
         }),
     ],
-};
+    module: {
+        rules: [
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader'],
+            },
+        ],
+    },
+    optimization: {
+        runtimeChunk: 'single',
+    },
+}
