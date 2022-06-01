@@ -4,10 +4,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    font-size: 3rem;
+    font-size: 2rem;
     min-height: 25vh;
     width: 100%;
 }
+
 
 /* Theme buttons div */
 .flexrow-container {
@@ -19,8 +20,7 @@
 }
 #unlist{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     max-width: 1200px;
 }
 form input {
@@ -28,21 +28,28 @@ form input {
     font-size: 17px;
     border: none;
     outline: none;
-    /* border-radius: 15; */
     border-top-left-radius: 17px;
     border-bottom-left-radius: 17px;
     max-width: 500px;
     transition: background-color 200ms ease-in-out;
-   
-    margin-left: 455px;
 }
 .tododiv li{
     padding: 7px;
     font-size: 20px;
-    flex: 1;
     border-radius: 30px;
     overflow-wrap: anywhere;
     list-style: none;
+
+}
+.closed{
+
+}
+.first-head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .check-btn, .deleted-btn {
@@ -55,10 +62,10 @@ form input {
   
 }
 .tododiv {
-    margin: 1rem;
-    /* background: rgb(247, 226, 223); */
-    /* color: black; */
+    background: rgb(247, 226, 223); 
+    color: black;
     font-size: 19px;
+    width: 93%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,7 +73,10 @@ form input {
     border-radius: 30px;
     transition: background-color 200ms ease-in-out;
 }
-
+.todo-list{
+    margin: 0;
+    padding: 0;
+}
 .todo-item {
     padding: 0rem 0.5rem;
    
