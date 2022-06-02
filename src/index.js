@@ -1,3 +1,4 @@
+import LIST from "./module/todo";
 const todoinput = document.querySelector('.todo-input');
 const todolist = document.querySelector('.todo-list');
 const todobtn = document.querySelector('.todo-btn');
@@ -29,8 +30,9 @@ function addToDo(event) {
 
 
   todolist.appendChild(toDoDiv);
-  todoinput.value = ' ';
+  todoinput.value = '';
 }
+
 todobtn.addEventListener('click', addToDo);
 
 function deletecheck(event) {
