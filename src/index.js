@@ -2,13 +2,15 @@ const todoinput = document.querySelector('.todo-input');
 const todolist = document.querySelector('.todo-list');
 const todobtn = document.querySelector('.todo-btn');
 
+// eslint-disable-next-line no-use-before-define
+todobtn.addEventListener('click', addToDo);
 function addToDo(event) {
   event.preventDefault();
   const toDoDiv = document.createElement('div');
   toDoDiv.classList.add('tododiv');
 
   const newToDo = document.createElement('li');
-  if (todoinput.value === '') {
+  if (todoinput.value === ' ') {
     alert('you must write something');
   } else {
     newToDo.innerText = todoinput.value;
@@ -26,12 +28,9 @@ function addToDo(event) {
   deleted.classList.add('deleted-btn');
   toDoDiv.appendChild(deleted);
 
-
-
   todolist.appendChild(toDoDiv);
   todoinput.value = ' ';
 }
-todobtn.addEventListener('click', addToDo);
 
 function deletecheck(event) {
   const item = event.target;
@@ -39,6 +38,7 @@ function deletecheck(event) {
   if (item.classList[0] === 'deleted-btn') {
     item.parentElement.classList.add('fall');
     item.parentElement.addEventListener('transitionend', () => {
+      // eslint-disable-next-line no-unused-expressions
       item.parentElement.remove;
     });
   }
@@ -48,4 +48,3 @@ function deletecheck(event) {
   }
 }
 todolist.addEventListener('click', deletecheck);
-

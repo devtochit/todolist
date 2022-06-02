@@ -1,30 +1,71 @@
-# Instant JS App Boilerplate
-A JS app boilerplate to instantly test or prototype something
-using webpack-dev-server and html-webpack-plugin with minimum configs.
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-in simple words if you want to quickly test some npm library or prototype a JS app instantly
-with live-reloading in zero-config, this small pre-configured project can help.
+# TO-do List
 
-## Clone the repo
-clone the repo, install its dependencies and
-don't forget to **rename** the `project directory` and `package.json` file
-```console
-$ git clone https://github.com/madmadi/instant-js-app-boilerplate
-$ cd instant-js-app-boilerplate
-$ npm install
+> "To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. A simple website that allows user to create a To-do list.
+
+## Built With
+
+- HTML5
+- CSS3
+- Javascript ES6
+- Webpack
+
+## Live Demo
+
+[Live Demo Link](https://livedemo.com)
+
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+- Visual Studio code or any Code Editor.
+
+### Setup
+
+#### Download the file to local directory
+
+- if you have already insall github in your local pc run:
+
+```sh
+git clone git@https://github.com/HeDevedUp/todolist.git
 ```
 
-## Start dev server
-to develop and preview your app run the command below to start dev-server
-with live-reladoing at `localhost:8080`
-```console
-$ npm run serve
-```
+- Or download the zip file from the github directory.
 
-## Other scripts
-below scripts may would be helpful
-```console
-$ npm run lint # run eslint to lint the /src
-$ npm run lint:fix # auto fix lint issues
-$ npm run build # build the /src to /dist with production mode
-```
+#### Linters tests
+
+- Lighthouse
+- Webhint
+- Stylelint
+- node_modules checker
+
+## Authors
+
+👤 **Darik Mohammed**
+
+- GitHub: [@githubhandle](https://github.com/HeDevedUp)
+- Twitter: [@twitterhandle](https://twitter.com/r_darik)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/uzomajesse/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.

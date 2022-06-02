@@ -1,4 +1,102 @@
-.redo{
-    background-color: brown;
-    
+
+#header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 2rem;
+  min-height: 25vh;
+  width: 100%;
+}
+
+
+/* Theme buttons div */
+.flexrow-container {
+  align-items: center;
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 3%;
+}
+
+#unlist {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+}
+
+form input {
+  padding: 10px;
+  font-size: 17px;
+  border: none;
+  outline: none;
+  border-top-left-radius: 17px;
+  border-bottom-left-radius: 17px;
+  max-width: 500px;
+  transition: background-color 200ms ease-in-out;
+}
+
+.tododiv li {
+  padding: 7px;
+  font-size: 20px;
+  border-radius: 30px;
+  overflow-wrap: anywhere;
+  list-style: none;
+}
+
+.first-head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.check-btn,
+.deleted-btn {
+  font-size: 19px;
+  cursor: pointer;
+  width: 2em;
+  height: 2em;
+  border-radius: 80%;
+  margin: 0 5px;
+}
+
+.tododiv {
+  background: rgb(247, 226, 223);
+  color: black;
+  font-size: 19px;
+  width: 93%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25em 0.5em;
+  border-radius: 30px;
+  transition: background-color 200ms ease-in-out;
+}
+
+.todo-list {
+  margin: 0;
+  padding: 0;
+}
+
+.todo-item {
+  padding: 0 0.5rem;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  transition: 0.2s;
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.fall {
+  transition: 0.5s;
+  transform: translateY(45rem) rotateZ(45deg);
+  opacity: 0;
 }
