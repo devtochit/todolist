@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  color: #a07970;
+  color: #b68b81;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -24,7 +24,7 @@ button {
 }
 
 .github {
-  fill: #151513;
+  fill: #0a0a09;
   color: #fff;
   position: absolute;
   top: 0;
