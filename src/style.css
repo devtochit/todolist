@@ -23,15 +23,21 @@ button {
   transition: 0.5s;
 }
 
-.github{
-  fill:#151513; 
-  color:#fff; 
+.github {
+  fill: #151513;
+  color: #fff;
   position: absolute;
-   top: 0; 
-   border: 0;
-    left: 0; 
-    transform: scale(-1, 1);
+  top: 0;
+  border: 0;
+  left: 0;
+  transform: scale(-1, 1);
 }
+
+.github svg {
+  width: 80px;
+  height: 80px;
+}
+
 button:hover {
   transform: scale(1.5);
   transition: 0.5s;

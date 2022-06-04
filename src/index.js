@@ -8,7 +8,7 @@ const ulList = document.getElementById('dynamic-list');
 let toDoLists = [];
 let checkboxes = document.querySelectorAll('.checkbox');
 
-const uploadHtml = () => {
+const viewPage = () => {
   const local = new List();
   toDoLists = local.getList();
   toDoLists.sort((a, b) => a.index - b.index);
@@ -20,12 +20,12 @@ const uploadHtml = () => {
                         <li id="${list.index - 1}" class = "todo-list" >
                           <div class="list">
                             <input type="checkbox" name="${list.index}" id="${list.index
-          }" class="checkbox" checked>
+}" class="checkbox" checked>
                             <label for="${list.index}"><s>${list.description
-          }</s></label>
+}</s></label>
                           </div>
                           <button type="button" id= "${list.index - 1
-          }" class="deleteList">
+}" class="deleteList">
                           <i class="fa-solid fa-trash-can"></i>
                           </button>
                         </li>  
@@ -35,12 +35,12 @@ const uploadHtml = () => {
                         <li id="${list.index - 1}" class = "todo-list" >
                           <div class="list">
                             <input type="checkbox" name="${list.index}" id="${list.index
-          }" class="checkbox">
+}" class="checkbox">
                             <label for="${list.index}">${list.description
-          }</label>
+}</label>
                           </div>
                           <button type="button" id= "${list.index - 1
-          }" class="deleteList">
+}" class="deleteList">
                           <i class="fa-solid fa-trash-can"></i>
                           </button>
                         </li>  
@@ -73,7 +73,7 @@ const uploadHtml = () => {
         event.preventDefault();
         const editValue = document.querySelector(`#input-edit${editId}`);
         localList.editTask(editId, editValue.value);
-        uploadHtml();
+        viewPage();
       });
     });
   });
@@ -90,7 +90,7 @@ const uploadHtml = () => {
         todoListLocal[listId - 1].completed = false;
       }
       localList.addList(todoListLocal);
-      uploadHtml();
+      viewPage();
       checkboxes = document.querySelectorAll('.checkbox');
     });
   });
@@ -101,7 +101,7 @@ const uploadHtml = () => {
       const localList = new List();
       const buttonId = button.getAttribute('id');
       localList.deleteList(buttonId * 1);
-      uploadHtml();
+      viewPage();
     });
   });
 
@@ -117,12 +117,12 @@ const uploadHtml = () => {
         listArray.push(list.getAttribute('id') * 1);
       });
       listClass.reorder(listArray);
-      uploadHtml();
+      viewPage();
     },
   });
 };
 
-uploadHtml();
+viewPage();
 
 const form = document.querySelector('#list-form');
 
@@ -140,7 +140,7 @@ form.addEventListener('submit', (event) => {
   todoListLocal.push(addList);
   localList.addList(todoListLocal);
   value.value = '';
-  uploadHtml();
+  viewPage();
 });
 
 const deleteChecked = document.querySelector('.delete-checked');
@@ -148,11 +148,11 @@ const deleteChecked = document.querySelector('.delete-checked');
 deleteChecked.addEventListener('click', () => {
   const localList = new List();
   localList.deleteCompleted();
-  uploadHtml();
+  viewPage();
 });
 
 const refresh = document.querySelector('.refresh-list');
 
 refresh.addEventListener('click', () => {
-  uploadHtml();
+  viewPage();
 });
