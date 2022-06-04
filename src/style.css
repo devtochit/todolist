@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #b68b81;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: rgb(246, 246, 246);
+  background-image: url(./img/double-bubble-outline.webp);
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.github {
+  fill: #0a0a09;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  border: 0;
+  left: 0;
+  transform: scale(-1, 1);
+}
+
+.github svg {
+  width: 80px;
+  height: 80px;
+}
+
+button:hover {
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+
+.to-do-list {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.to-do-list * {
+  color: #fff;
+}
+
+.to-do-list h1 {
+  margin-bottom: 3rem;
+  color: #83706c;
+}
+
+.fa-list-check {
+  color: inherit;
+}
+
+.list-container {
+  background-color: #857575;
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+}
+
+.list-heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.list-heading h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.list-add {
+  margin: 1rem;
+}
+
+input,
+input:focus {
+  border: none;
+  background-color: inherit;
+  font-size: 16px;
+  outline: none;
+  transition: 0.5s;
+}
+
+.list-add input:focus {
+  color: #655a58;
+  transform: scale(1.1);
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.view-list {
+  margin: 1rem;
+  margin-top: 0;
+}
+
+.view-list ul {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+}
+
+.view-list ul li {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.delete-list {
+  background-color: #362c2a;
+  padding: 1rem;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.delete-checked:hover {
+  transition: 0.7s;
+  transform: scale(1.1);
+}
+
+.edit-form {
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .to-do-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .list-container {
+    width: 700px;
+  }
+}
