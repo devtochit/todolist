@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://darikmohammed.github.io/TodoList-Webpack/)
+[Live Demo Link](https://livedemo.com)
 
 ## Getting Started
 
@@ -30,7 +30,7 @@ To get a local copy up and running follow these simple example steps.
 - if you have already insall github in your local pc run:
 
 ```sh
-git clone git@github.com:darikmohammed/TodoList-Webpack.git
+git clone git@https://github.com/HeDevedUp/todolist.git
 ```
 
 - Or download the zip file from the github directory.
@@ -46,9 +46,9 @@ git clone git@github.com:darikmohammed/TodoList-Webpack.git
 
 👤 **Darik Mohammed**
 
-- GitHub: [@githubhandle](https://github.com/darikmohammed)
+- GitHub: [@githubhandle](https://github.com/HeDevedUp)
 - Twitter: [@twitterhandle](https://twitter.com/r_darik)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/darik-mohammed-57352120b/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/uzomajesse/)
 
 ## 🤝 Contributing
 
