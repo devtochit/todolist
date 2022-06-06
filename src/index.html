@@ -31,6 +31,37 @@
         </svg></a>
     </div> -->
 
+
+    <main>
+        <section class="to-do-list">
+            <h1> just to it </h1>
+            <div class="list-container">
+                <div class="list-heading">
+                    <h2 class="">Todays Task</h2>
+                    <button type="button" class="refresh-list"><i class="fa-solid fa-arrows-rotate"></i></button>
+                </div>
+                <hr>
+                <div class="list-add">
+                    <form action="#" method="get" id="list-form" class="add-form">
+                        <input type="text" name="add-list" id="add-list" placeholder="Add to your list..." required>
+                        <button type="submit" class="add-list-btn"><i class="fa-solid fa-check"></i></button>
+                    </form>
+
+                </div>
+                <hr>
+                <div class="view-list">
+                    <ul id="dynamic-list">
+                        <!-- dynamically create a to-do List -->
+                    </ul>
+                </div>
+                <hr>
+                <div class="delete-list">
+                    <button type="button" class="delete-checked">Clear all completed</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <div id="header">
       <div class="flexrow-container">
         <div class="standard-theme theme-selector"></div>
@@ -65,6 +96,7 @@
 
       <script src="index.js"></script>
       <script src="https://kit.fontawesome.com/fa3789ca92.js" crossorigin="anonymous"></script>
+
 </body>
 
 
